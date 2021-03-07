@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css" integrity="sha512-wl80ucxCRpLkfaCnbM88y4AxnutbGk327762eM9E/rRTvY/ZGAHWMZrYUq66VQBYMIYDFpDdJAOGSLyIPHZ2IQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>AE Inter</title>
+</head>
+<body>
+  <video class="w-full h-screen object-cover absolute top-0 left-0" autoplay muted loop id="myVideo">
+    <source src="inter.mp4" type="video/mp4">
+  </video>    
+  <div class="relative w-full h-screen">
+
+    <nav style="backdrop-filter: blur(15px);" class="w-full bg-black bg-opacity-80 md:px-28 py-4 md:py-0 px-6 flex items-center fixed z-50 justify-between">
+      <img class="md:w-44 w-32" src="https://www.axcapital.ae/static/img/logo2-left.png">
+
+      <ul class="md:flex items-center hidden">
+          <li class="py-9">
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
+
+            <div class="absolute hidden top-24 left-0 w-full bg-black z-50">
+                <div class="grid grid-cols-2 px-24 py-9">
+                  <div class="grid grid-cols-2">
+                    <div id="category" class="flex flex-col w-auto">
+                      <h1 class="text-xl mb-3 text-white">Lifestyles</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Residential Communities</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">WaterFront Properties</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Location</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">the Crescent</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai hills</a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+
+                  <div class="flex">
+                    <div style="width: 30%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-32 mx-2 cursor-pointer group">
+                      <h1 class="px-10 py-5 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:text-yellow-500">Beachfront</h1>
+                    </div>
+
+                    <div style="width: 30%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-32 mx-2 cursor-pointer group">
+                      <h1 class="px-10 py-5 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:text-yellow-500">Beachfront</h1>
+                    </div>
+
+                    <div style="width: 30%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-32 mx-2 cursor-pointer group">
+                      <h1 class="px-10 py-5 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:text-yellow-500">Beachfront</h1>
+                    </div>
+                  </div>
+                </div>           
+
+
+            </div>
+          </li>
+
+          <li>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Rent</a>
+          </li>
+          <li>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Sell</a>
+          </li>
+
+          <li class="py-9">
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>off-plan</a>
+
+            <div class="absolute hidden top-24 left-0 w-full bg-black z-50">
+              <h1 class="text-lg uppercase text-white text-center pt-4">Latest Projects</h1>
+                <div class="grid grid-cols-4 px-24 py-9">
+                  
+                    <div id="category" class="flex flex-col w-auto">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Residential Communities</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">WaterFront Properties</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="flex flex-col">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">the Crescent</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai hills</a>
+                        </li>
+                      </ul>
+                    </div> 
+
+                    <div id="category" class="flex flex-col w-auto">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Residential Communities</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">WaterFront Properties</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="flex flex-col">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">the Crescent</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai hills</a>
+                        </li>
+                      </ul>
+                    </div> 
+
+                  
+                </div>           
+
+
+            </div>
+          </li>
+
+          <li class="py-9">
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Global</a>
+
+            <div class="absolute hidden top-24 left-0 w-full bg-black z-50">
+                <div class="grid grid-cols-4 px-24 py-9">
+                    <div id="category" class="flex flex-col w-auto">
+                      <h1 class="text-xl mb-3 text-white">Top Markets</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Europe</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                      </ul>
+                    </div> 
+
+                    <div id="category" class="flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Europe</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        
+                      </ul>
+                    </div> 
+                    <div id="category" class="flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Asia</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        
+                      </ul>
+                    </div> 
+                </div>           
+
+
+            </div>
+          </li>
+
+          <li>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>AX Blog</a>
+          </li>
+
+          <li>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Ax design</a>
+          </li>
+
+          <li>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>who we are</a>
+          </li>
+          
+          <li class="relative py-9">
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-yellow-500 cursor-pointer" href='#'>EN</a>
+
+            <div id="category" class="absolute hidden top-24 w-32 left-0 w-full bg-black z-50">
+              <div class="flex flex-col p-4">
+                <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">RU</a>
+              <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Uz</a>
+              </div>
+            </div>
+          </li>
+          
+      </ul>
+      
+      <p class="md:hidden block text-white">
+        <i class="fas fa-bars text-xl"></i>
+      </p>
+    </nav>
+
+    <div style="backdrop-filter: blur(15px);" class="absolute bottom-0 bg-black bg-opacity-80 w-full text-center py-6 text-white text-2xl left-0">
+      <i id="arrow" class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+  
+
+  <section class="bg-gray-900 text-center py-20">
+    <h1 class="md:text-5xl text-3xl text-white pb-10">AX CAPITAL</h1>
+    <p class="md:text-xl text-lg text-white md:px-64 px-6">We offer a full spectrum of commercial, residential, retail and off-plan properties. We have a track record in marketing property at a national and international level, with over half of our business coming through referrals and recommendations</p>
+  </section>
+
+  <section class="py-10 w-full px-5">
+    <h1 class="text-5xl text-center text-black pb-10">LifeStyle</h1>
+    <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+      <div style="width: 100%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-64 cursor-pointer group">
+        <h1 class="px-10 py-5 group-hover:bg-opacity-80 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:bg-black">Beachfront</h1>
+      </div>
+
+      <div style="width: 100%; background: url('https://images.unsplash.com/photo-1574145575609-a0c5cefd0393?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover;" class="relative h-64 cursor-pointer group">
+        <h1 class="px-10 py-5 group-hover:bg-opacity-80 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:bg-black">DownTown</h1>
+      </div>
+
+      <div style="width: 100%; background: url('https://images.unsplash.com/photo-1500932334442-8761ee4810a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover;" class="relative h-64 cursor-pointer group">
+        <h1 class="px-10 py-5 group-hover:bg-opacity-80 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:bg-black">Golf Estate</h1>
+      </div>
+
+      <div style="width: 100%; background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover;" class="relative h-64 cursor-pointer group">
+        <h1 class="px-10 py-5 group-hover:bg-opacity-80 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:bg-black">Luxury</h1>
+      </div>
+
+      <div style="width: 100%; background: url('https://images.unsplash.com/photo-1612366268272-325e246c2843?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80'); background-size: cover;" class="relative h-64 cursor-pointer group">
+        <h1 class="px-10 py-5 group-hover:bg-opacity-80 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:bg-black">Marina Living</h1>
+      </div>
+
+      <div style="width: 100%; background: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80'); background-size: cover;" class="relative h-64 cursor-pointer group">
+        <h1 class="px-10 py-5 group-hover:bg-opacity-80 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:bg-black">Residential</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full">
+    <h1 class="text-5xl text-center text-black py-8">LifeStyle</h1>
+    <div id="hover-house" class="text-center">
+      <a onclick="change(event, 'PentHouse')" class="active tablinks mx-5 px-4 py-2 relative cursor-pointer duration-300 hover:text-yellow-500 select-none text-xl">PentHouse</a>
+      <a onclick="change(event, 'Apartment')" class="tablinks mx-5 px-4 py-2 relative cursor-pointer duration-300 hover:text-yellow-500 select-none text-xl">Apartment</a>
+      <a onclick="change(event, 'Villa')" class="tablinks mx-5 px-4 py-2 relative cursor-pointer duration-300 hover:text-yellow-500 select-none text-xl">Villa</a>
+    </div>
+
+    <div id="PentHouse" class="content block grid md:grid-cols-3 grid-cols-1 gap-5 mt-5 px-5 justify-between py-10">
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">The Sterling</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 15 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">PentHouse, 4 Bedroom</p>
+        </div>
+      </div>
+      
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">The Sterling</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 15 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">PentHouse, 4 Bedroom</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">The Sterling</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 15 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">PentHouse, 4 Bedroom</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Apartment" class="content grid md:grid-cols-3 grid-cols-1 gap-5  hidden mt-5 px-5 justify-between py-14">
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">Best Appartments</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 7 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">Apartment, 6 Bedroom</p>
+        </div>
+      </div>
+      
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">Best Appartments</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 7 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">Apartment, 6 Bedroom</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">Best Appartments</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 7 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">Apartment, 6 Bedroom</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Villa" class="content grid md:grid-cols-3 grid-cols-1 gap-5  hidden mt-5 px-5 justify-between py-14">
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">Awesome Villa</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 32 000 000</p>
+          <p class="text-gray-400 py-1 px-4">NewTown</p>
+          <p class="text-gray-400 py-1 px-4">Villa, 10 Bedroom</p>
+        </div>
+      </div>
+      
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">Awesome Villa</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 32 000 000</p>
+          <p class="text-gray-400 py-1 px-4">NewTown</p>
+          <p class="text-gray-400 py-1 px-4">Villa, 10 Bedroom</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">Awesome Villa</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 32 000 000</p>
+          <p class="text-gray-400 py-1 px-4">NewTown</p>
+          <p class="text-gray-400 py-1 px-4">Villa, 10 Bedroom</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex items-center my-5 justify-center">
+      <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">View All</a>
+    </div>
+  </section>
+
+  <section class="w-full" >
+    <div class="hidden md:block" style="background: url(https://d7i54qaggkyj3.cloudfront.net/img/Featured_Off-Plan_Project.jpg); background-position: center; background-size: cover; height: 500px;">
+      <div style="backdrop-filter: blur(15px);" class="w-1/2 h-full bg-black bg-opacity-60 px-24 py-16 flex flex-col justify-between">
+        <h1 class="text-4xl text-white">Featured off-plan project</h1>
+        <p class="text-white text-lg py-9">Iconic elegance and an extraordinary legacy converge with glamour and modern opulence at The Residences Dorchester Collection Dubai. With only 39 exquisite apartments, managed exclusively by the Dorchester Collection, this elite waterfront development in the Burj Khalifa District is the perfect embodiment of the legendary Dorchester experience, the iconic architecture of Foster + Partners, and the timeless design of Gilles & Boissier.</p>
+        <div>
+          <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:hidden block" style="background: url(https://d7i54qaggkyj3.cloudfront.net/img/Featured_Off-Plan_Project.jpg); background-position: center; background-size: cover; height: 300px;">
+    </div>
+    <div style="backdrop-filter: blur(15px);" class="w-full md:hidden block h-full bg-black bg-opacity-60 md:px-24 px-6 py-16 flex flex-col justify-between">
+      <h1 class="text-4xl md:text-2xl text-white text-center">Featured off-plan project</h1>
+      <p class="text-white text-center md:text-lg text-base md:py-9 py-4">Iconic elegance and an extraordinary legacy converge with glamour and modern opulence at The Residences Dorchester Collection Dubai. With only 39 exquisite apartments, managed exclusively by the Dorchester Collection, this elite waterfront development in the Burj Khalifa District is the perfect embodiment of the legendary Dorchester experience, the iconic architecture of Foster + Partners, and the timeless design of Gilles & Boissier.</p>
+      <div class="flex items-center justify-center">
+        <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="w-full h-auto">
+    <h1 class="text-5xl text-center text-black py-9">Off-Plan Projects</h1>
+    <h1 class="text-xl text-center text-gray-600 pb-8">Broaden your scope - explore the most comprehensive list of investment opportunities.</h1>
+    <div class="px-5 grid md:grid-cols-2 grid-cols-1 gap-10">
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60'); height: 400px; background-position: center; background-size: cover; z-index: 5;" class="relative cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full flex flex-col justify-end" >
+            <div class="w-full grid px-14">
+              <a href="#" class="text-2xl justify-self-start text-white">Ruba</a>
+              <p class="justify-self-end text-gray-100">Arabian Ranches 3, Dubai</p>
+            </div>
+            <div class="w-full grid px-14 mb-4 mt-2">
+              <div class="justify-self-end">
+                <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60'); height: 400px; background-position: center; background-size: cover; z-index: 5;" class="relative cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full flex flex-col justify-end" >
+            <div class="w-full grid px-14">
+              <a href="#" class="text-2xl justify-self-start text-white">Ruba</a>
+              <p class="justify-self-end text-gray-100">Arabian Ranches 3, Dubai</p>
+            </div>
+            <div class="w-full grid px-14 mb-4 mt-2">
+              <div class="justify-self-end">
+                <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1600488999129-e49662f4020c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60'); height: 400px; background-position: center; background-size: cover; z-index: 5;" class="relative cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full flex flex-col justify-end" >
+            <div class="w-full grid px-14">
+              <a href="#" class="text-2xl justify-self-start text-white">Ruba</a>
+              <p class="justify-self-end text-gray-100">Arabian Ranches 3, Dubai</p>
+            </div>
+            <div class="w-full grid px-14 mb-4 mt-2">
+              <div class="justify-self-end">
+                <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1541123603104-512919d6a96c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'); height: 400px; background-position: center; background-size: cover; z-index: 5;" class="relative cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full flex flex-col justify-end" >
+            <div class="w-full grid px-14">
+              <a href="#" class="text-2xl justify-self-start text-white">Ruba</a>
+              <p class="justify-self-end text-gray-100">Arabian Ranches 3, Dubai</p>
+            </div>
+            <div class="w-full grid px-14 mb-4 mt-2">
+              <div class="justify-self-end">
+                <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="w-full flex items-center py-5 justify-center">
+      <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">View All</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="hidden md:block" style="background: url(https://www.axcapital.ae/static/img/st-george-3.jpg); background-position: center; background-size: cover; height: 500px;">
+      <div style="backdrop-filter: blur(15px);" class="w-1/2 h-full bg-black bg-opacity-60 px-24 py-16 flex flex-col justify-between">
+        <h1 class="text-4xl text-white">Featured international project</h1>
+        <p class="text-white text-lg py-9">With unrivalled views over the Grade II listed church from which its name is derived, this stunning Castlefield development offers a luxurious approach to city centre living. Bright open spaces and clean lines provide a meticulous design for today’s city dweller. Each apartment will feature its own private winter garden and a communal rooftop bar provides attractive outdoor space in a city setting</p>
+        <div>
+          <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:hidden block" style="background: url(https://www.axcapital.ae/static/img/st-george-3.jpg); background-position: center; background-size: cover; height: 300px;">
+    </div>
+    <div style="backdrop-filter: blur(15px);" class="w-full md:hidden block h-full bg-black bg-opacity-60 md:px-24 px-6 py-16 flex flex-col justify-between">
+      <h1 class="text-4xl md:text-2xl text-white text-center">Featured international project</h1>
+      <p class="text-white text-center md:text-lg text-base md:py-9 py-4">With unrivalled views over the Grade II listed church from which its name is derived, this stunning Castlefield development offers a luxurious approach to city centre living. Bright open spaces and clean lines provide a meticulous design for today’s city dweller. Each apartment will feature its own private winter garden and a communal rooftop bar provides attractive outdoor space in a city setting</p>
+      <div class="flex items-center justify-center">
+        <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full h-auto">
+    <h1 class="text-5xl text-center text-black py-9">International Property</h1>
+    <h1 class="text-xl text-center text-gray-600">Search no more - lean back and enjoy our curated list of homes from around the world.</h1>
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-10 mt-5 px-5 py-6">
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">The Sterling</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 15 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">PentHouse, 4 Bedroom</p>
+        </div>
+      </div>
+      
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">The Sterling</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 15 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">PentHouse, 4 Bedroom</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-300 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1555362310-ad5ca88ac73a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-10">Hello | world</h1>
+            <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus unde eum repudiandae consequuntur totam temporibus perferendis maiores nihil alias excepturi!</p>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 p-5">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-yellow-500 border-white border-b group-hover:border-yellow-500 text-xl">The Sterling</a>
+          </div>
+          <p class="text-lg py-1 px-4">$ 15 000 000</p>
+          <p class="text-gray-400 py-1 px-4">Business Bay</p>
+          <p class="text-gray-400 py-1 px-4">PentHouse, 4 Bedroom</p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex items-center justify-center my-5">
+      <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">View All</a>
+    </div>
+  </section>
+
+  <section style="background: #1A1A1A;" class="w-full h-auto">
+    <h1 class="text-5xl text-center text-white py-9">AX Blog</h1>
+    <h1 class="text-xl text-center text-gray-200">In our relentless strive for perfection, we are overfilled with ideas around luxury homes, design, and lifestyle. We share them all in our Blog.</h1>
+
+    <div class="px-5 py-3 grid md:grid-cols-4 gap-5">
+
+      <div style="width: 100%;" class="border border-gray-500 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1535360392524-dedff4c8b227?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-20">Hello | world</h1>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="background: #313131;" class="grid grid-cols-1 px-4 py-2">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-white text-xl">Ferrari Roma</a>
+          </div>
+          <p class="text-lg text-gray-500 px-4">Jan 21, 2018</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-500 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8ZHViYWl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-20">Hello | world</h1>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="background: #313131;" class="grid grid-cols-1 px-4 py-2">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-white text-xl">Dubai’s top seaside areas</a>
+          </div>
+          <p class="text-lg text-gray-500 px-4">Jan 21, 2018</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-500 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1504326787394-e6d75cae8027?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGR1YmFpfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-20">Hello | world</h1>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="background: #313131;" class="grid grid-cols-1 px-4 py-2">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-white text-xl">Affordable housing in Dubai</a>
+          </div>
+          <p class="text-lg text-gray-500 px-4">Jan 21, 2018</p>
+        </div>
+      </div>
+
+      <div style="width: 100%;" class="border border-gray-500 duration-300 hover:shadow-xl">
+        <div style="background: url('https://images.unsplash.com/photo-1497601573976-fb2f03ea161d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGR1YmFpfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); background-size: cover; z-index: 5;" class="relative h-64 cursor-pointer group relative text-center">
+          <div id="card" class="w-full h-full group-hover:opacity-100 opacity-0 duration-300" >
+            <h1 class="text-xl z-50 font-mono text-white pt-20">Hello | world</h1>
+            <div class="my-5">
+              <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">Learn More</a>
+              <button class="focus:outline-none h-12 w-12 border border-yellow-500 z-50 text-white hover:bg-yellow-500 duration-300">
+                <i class="fas fa-thumbs-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="background: #313131;" class="grid grid-cols-1 px-4 py-2">
+          <div class="py-1 px-4 group">
+            <a href="#" class="text-white text-xl">Why Dubai property market</a>
+          </div>
+          <p class="text-lg text-gray-500 px-4">Jan 21, 2018</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="w-full flex items-center justify-center py-3">
+      <a id="btn" href="#" class="text-yellow-500 relative hover:bg-yellow-500 hover:text-white duration-300 py-3 px-8 text-lg">View All</a>
+    </div>
+  </section>
+
+  <div style="background: #131313;" class="py-16 flex items-center justify-center">
+    <button id="btn-hover" class="uppercase focus:outline-none relative py-2 px-16 text-white">
+      Inquiry
+    </button>
+  </div>
+
+  <footer class="relative w-full overflow-hidden" >
+    <img id="svg" src="uz.svg" class="absolute top-20 left-10" >
+    <div class="grid md:grid-cols-3 grid-cols-1 h-screen items-center z-50 px-5">
+      <div class='px-32'>
+        <h1 class="text-lg text-white">AX CAPITAL</h1>
+        <p class="text-gray-400 py-5">3201, WESTBURRY TOWER
+          AL ABRAJ STREET
+          BUSINESS BAY, DUBAI, UAE
+          PO BOX 340777</p>
+        <p class="text-gray-400">+971.4242.7373
+          <br>
+          info@axcapital.ae</p>
+      </div>
+      <div class='px-24 md:block hidden'>
+        <h1 class="text-lg text-white">Explore</h1>
+        <ul class="h-64 pt-4 flex flex-col flex-wrap">
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Appartments</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">PentHouses</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Villa</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Townhouse</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Off-plan</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Land</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Area Guides</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Sell</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Rent</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Advertise</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">International</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Contact</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Contact us</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Reviews</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:grid hidden justify-end px-3">
+        <div class="mb-8">
+          <h1 class="text-lg text-white text-right mb-2">Currency & Units</h1>
+          <div class="flex justify-end">
+            <div class="w-64 flex items-center text-gray-100 justify-center h-12 bg-gray-500 uppercase">USd</div>
+            <a class="uppercase w-16 border border-gray-400 text-gray-400 hover:border-gray-white mx-1 flex items-center justify-center h-12" href="#">Sq Ft</a>
+            <a class="uppercase w-16 border border-gray-400 text-gray-400 hover:border-gray-white mx-1 flex items-center justify-center h-12" href="#">Sq m</a>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <h1 class="text-lg text-white text-right mb-2">Newsletter</h1>
+          <div class="flex justify-end">
+            <input type="text" id="input" placeholder="Enter Your E-mail" class="w-64 focus:outline-none px-4 h-12 uppercase duration-300" />
+            <button id="btn-hover" class="uppercase focus:outline-none relative ml-2 px-10  h-12 text-white">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <h1 class="text-lg text-white text-right mb-2">Search</h1>
+          <div class="flex justify-end">
+            <input type="text" id="input" placeholder="Search in Dubai" class="w-72 focus:outline-none px-4 h-12 uppercase duration-300" />
+            <button id="btn-hover" class="uppercase focus:outline-none relative ml-2 px-11 h-12 text-white">
+              Find
+            </button>
+          </div>
+        </div>
+        
+        <div>
+          <h1 class="text-lg text-white text-right mb-2">Social links</h1>
+          <div class="flex justify-end items-center">
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="grid md:hidden sm:grid-cols-2 grid-cols-1 justify-between mb-4">
+      <div class='px-6'>
+        <h1 class="text-lg text-white">Explore</h1>
+        <ul class="h-64 pt-4 flex flex-col flex-wrap">
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Appartments</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">PentHouses</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Villa</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Townhouse</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Off-plan</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Land</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Area Guides</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Sell</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Rent</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Advertise</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">International</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Contact</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Contact us</a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="text-gray-400 hover:text-white duration-300 uppercase">Reviews</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid justify-end px-3">
+        <div class="mb-8">
+          <h1 class="text-lg text-white text-right mb-2">Currency & Units</h1>
+          <div class="flex justify-end">
+            <div class="w-32 flex items-center text-gray-100 justify-center h-12 bg-gray-500 uppercase">USd</div>
+            <a class="uppercase w-16 border border-gray-400 text-gray-400 hover:border-gray-white mx-1 flex items-center justify-center h-12" href="#">Sq Ft</a>
+            <a class="uppercase w-16 border border-gray-400 text-gray-400 hover:border-gray-white mx-1 flex items-center justify-center h-12" href="#">Sq m</a>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <h1 class="text-lg text-white text-right mb-2">Newsletter</h1>
+          <div class="flex justify-end">
+            <input type="text" id="input" placeholder="Enter Your E-mail" class="w-40 focus:outline-none px-4 h-12 uppercase duration-300" />
+            <button id="btn-hover" class="uppercase focus:outline-none relative ml-2 px-4  h-12 text-white">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <h1 class="text-lg text-white text-right mb-2">Search</h1>
+          <div class="flex justify-end">
+            <input type="text" id="input" placeholder="Search in Dubai" class="w-40 focus:outline-none px-4 h-12 uppercase duration-300" />
+            <button id="btn-hover" class="uppercase focus:outline-none relative ml-2 px-4 h-12 text-white">
+              Find
+            </button>
+          </div>
+        </div>
+        
+        <div>
+          <h1 class="text-lg text-white text-right mb-2">Social links</h1>
+          <div class="flex justify-end items-center">
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="mx-1 h-10 w-10 duration-300 flex items-center border text-gray-400 border-gray-400 hover:border-white hover:text-white justify-center">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-2 flex justify-between items-center mx-5 border-t">
+      <p class="text-gray-600 text-xs">AX CAPITAL© 2021 ALL RIGHTS RESERVED</p>
+      <div id="footer" class="flex items-center">
+        <a class="px-4 py-2 relative cursor-pointer text-gray-400 duration-300 text-sm">Terms of Use</a>
+        <a class="px-4 py-2 relative cursor-pointer text-gray-400 duration-300 text-sm">Privacy Policy</a>
+        <a class="px-4 py-2 relative cursor-pointer text-gray-400 duration-300 text-sm">SiteMap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
