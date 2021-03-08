@@ -949,11 +949,26 @@
     </div>
   </section>
 
-  <div style="background: #131313;" class="py-16 flex items-center justify-center">
-    <button data-aos="zoom-in"
+  <div x-data="{ open: false }" style="background: #131313;" class="py-16 flex items-center justify-center">
+    <button @click="open = true" data-aos="zoom-in"
     data-aos-duration="1000" id="btn-hover" class="uppercase focus:outline-none relative py-2 px-16 text-white">
       Inquiry
     </button>
+     
+    <div x-show="open">
+      <div class="fixed top-0 left-0 bg-black bg-opacity-90 w-full h-screen flex items-center justify-center z-50">
+      <div style="background: #323131;" class="rounded px-8 sm:px-10 py-8 bg-red-200 grid relative">
+        <i @click="open = false" class="fas fa-times absolute top-0 right-0 text-white p-3"></i>
+        <h1 class="text-3xl text-center font-medium text-gray-600">Make an inquiry</h1>
+        <hr class="w-32 my-3 m-auto h-0.5 border-none bg-yellow-500">
+        <input type="text" id="input" placeholder="Name" class="my-2 w-80 focus:outline-none px-4 h-12 uppercase duration-300" />
+        <input type="tel" id="input" placeholder="Phone Number" class="my-2 w-80 focus:outline-none px-4 h-12 uppercase duration-300" />
+        <button id="btn-hover" class="uppercase focus:outline-none relative py-2 px-16 text-white">
+      Inquiry
+    </button>
+      </div>
+    </div>
+    </div>
   </div>
 
   <footer class="relative w-full overflow-hidden" >
@@ -1203,6 +1218,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="script.js"></script>
   <script>
     AOS.init()
