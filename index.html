@@ -19,7 +19,7 @@
     <nav style="backdrop-filter: blur(15px);" class="w-full bg-black bg-opacity-80 md:px-28 py-4 md:py-0 px-6 flex items-center fixed z-50 justify-between">
       <img class="md:w-44 w-32" src="https://www.axcapital.ae/static/img/logo2-left.png">
 
-      <ul class="md:flex items-center hidden">
+      <ul id="menu" class="md:flex items-center hidden">
           <li class="py-9">
             <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
 
@@ -327,9 +327,352 @@
           
       </ul>
       
-      <p class="md:hidden block text-white">
+      <p id="sideBarBtn" class="md:hidden block text-white">
         <i class="fas fa-bars text-xl"></i>
       </p>
+
+      <div id="sideBar" style="backdrop-filter: blur(15px);"  class="overflow-auto w-full hidden h-screen fixed top-16 right-0 bg-black bg-opacity-90">
+        <ul id="sideBarMenu" class="grid grid-cols-1">
+          <li x-data="{buy:false}" class="py-4">
+            <a @click="buy = true" class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
+
+            <div
+            x-show="buy"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform"
+            x-transition:enter-end="opacity-100 transform"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 transform"
+            x-transition:leave-end="opacity-0 transform"
+            @click.away="buy = false" class="px-4 w-full bg-black z-50">
+                <div class="grid grid-cols-1 py-9">
+                  <div class="grid grid-cols-1">
+                    <div id="category" class="flex flex-col w-auto mb-4">
+                      <h1 class="text-xl mb-3 text-white">Lifestyles</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Residential Communities</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">WaterFront Properties</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="flex mb-3 flex-col">
+                      <h1 class="text-xl mb-3 text-white">Location</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">the Crescent</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai hills</a>
+                        </li>
+                      </ul>
+                    </div> 
+                  </div>
+
+                  <div class="grid grid-cols-1 gap-5">
+                    <div style="width: 100%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-32 mx-2 cursor-pointer group">
+                      <h1 class="px-10 py-5 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:text-yellow-500">Beachfront</h1>
+                    </div>
+
+                    <div style="width: 100%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-32 mx-2 cursor-pointer group">
+                      <h1 class="px-10 py-5 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:text-yellow-500">Beachfront</h1>
+                    </div>
+
+                    <div style="width: 100%; background: url('https://images.unsplash.com/photo-1596468063591-9cdb63108a6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'); background-size: cover;" class="relative h-32 mx-2 cursor-pointer group">
+                      <h1 class="px-10 py-5 duration-300 text-white font-bold absolute bottom-0 left-0 group-hover:text-yellow-500">Beachfront</h1>
+                    </div>
+                  </div>
+                </div>           
+
+
+            </div>
+          </li>
+
+          <li class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Rent</a>
+          </li>
+          <li class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Sell</a>
+          </li>
+
+          <li x-data="{off:false}" class="py-4">
+            <a @click="off = true" class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>off-plan</a>
+
+            <div
+            x-show="off"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform"
+            x-transition:enter-end="opacity-100 transform"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 transform"
+            x-transition:leave-end="opacity-0 transform"
+            @click.away="off = false" class="w-full overflow-hidden bg-black z-50">
+              <h1 class="text-lg py-5 uppercase text-white px-4">Latest Projects</h1>
+                <div class="grid grid-cols-1 px-4 py-2">
+                  
+                    <div id="category" class="flex mb-3 flex-col w-auto">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Residential Communities</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">WaterFront Properties</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="flex flex-col mb-3">
+                      <ul class="flex flex-col mb-3">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">the Crescent</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai hills</a>
+                        </li>
+                      </ul>
+                    </div> 
+
+                    <div id="category" class="flex flex-col w-auto mb-3">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Residential Communities</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">WaterFront Properties</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="mb-3 flex flex-col">
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">the Crescent</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai hills</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>           
+
+
+            </div>
+          </li>
+
+          <li x-data="{global:false}" class="py-4">
+            <a @click="global = true" class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Global</a>
+
+            <div
+            x-show="global"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform"
+            x-transition:enter-end="opacity-100 transform"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 transform"
+            x-transition:leave-end="opacity-0 transform"
+            @click.away="global = false"
+            class="w-full bg-black z-50">
+                <div class="grid grid-cols-1 px-4 py-3">
+                    <div id="category" class="mb-3 flex flex-col w-auto">
+                      <h1 class="text-xl mb-3 text-white">Top Markets</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Beachfront</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">DownTown</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Golf Estates</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Luxury PentHouses</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Marina Living</a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div id="category" class="mb-3 flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Europe</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Jumeriah Beach</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Arabian Ranches 3</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Dubai creek</a>
+                        </li>
+                      </ul>
+                    </div> 
+
+                    <div id="category" class="mb-3 flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Europe</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        
+                      </ul>
+                    </div> 
+
+                    <div id="category" class="mb-3 flex flex-col">
+                      <h1 class="text-xl mb-3 text-white">Asia</h1>
+                      <ul class="flex flex-col">
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">All Locations</a>
+                        </li>
+                        <li class="my-2">
+                          <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Damac Hills</a>
+                        </li>
+                        
+                      </ul>
+                    </div> 
+                </div>           
+
+
+            </div>
+          </li>
+
+          <li class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>AX Blog</a>
+          </li>
+
+          <li class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Ax design</a>
+          </li>
+
+          <li class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>who we are</a>
+          </li>
+
+          <li x-data="{lang:false}" class="py-4">
+            <a @click="lang = true" class="relative px-4 uppercase text-lg text-yellow-500 cursor-pointer" href='#'>EN</a>
+
+            <div
+            x-show="lang"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform"
+            x-transition:enter-end="opacity-100 transform"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 transform"
+            x-transition:leave-end="opacity-0 transform"
+            @click.away="lang = false"
+            id="category" class="bg-black z-50">
+              <div class="flex flex-col p-4">
+                <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">RU</a>
+                <a class="py-2 relative cursor-pointer hover:text-white text-gray-400 duration-300 uppercase">Uz</a>
+              </div>
+            </div>
+          </li>
+          
+      </ul>
+      </div>
     </nav>
 
     <div style="backdrop-filter: blur(15px);" class="absolute bottom-0 bg-black bg-opacity-80 w-full text-center py-6 text-white text-2xl left-0">

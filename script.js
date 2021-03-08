@@ -15,6 +15,10 @@ function change(e, id){
 } 
 
 
-$('nav ul li').hover(function() {
+$('#menu li').hover(function() {
 	$(this).children('div').stop(true, false, true).slideToggle(300);
+});
+
+$('#sideBarBtn').click(function() {
+	$("#sideBar").slideToggle(300);
 });
