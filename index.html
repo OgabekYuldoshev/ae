@@ -16,14 +16,14 @@
   </video>    
   <div class="relative w-full h-screen">
 
-    <nav style="backdrop-filter: blur(15px);" class="w-full bg-black hover:bg-opacity-90 duration-300 bg-opacity-80 md:px-28 py-4 md:py-0 px-6 flex items-center fixed z-50 justify-between">
+    <nav style="backdrop-filter: blur(15px);" class="w-full bg-black hover:bg-opacity-90 duration-300 bg-opacity-80 md:px-28 py-4 xl:py-0 px-6 flex items-center fixed z-50 justify-between">
       <a href="#">
         <img class="md:w-44 w-32" src="https://www.axcapital.ae/static/img/logo2-left.png">
       </a>
 
-      <ul id="menu" class="md:flex items-center hidden">
+      <ul id="menu" class="xl:flex items-center hidden">
           <li class="py-9">
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>Buy</a>
 
             <div class="absolute hidden top-24 left-0 w-full bg-black z-50">
                 <div class="grid grid-cols-2 px-24 py-9">
@@ -103,14 +103,14 @@
           </li>
 
           <li>
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Rent</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>Rent</a>
           </li>
           <li>
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Sell</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>Sell</a>
           </li>
 
           <li class="py-9">
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>off-plan</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>off-plan</a>
 
             <div class="absolute hidden top-24 left-0 w-full bg-black z-50">
               <h1 class="text-lg uppercase text-white text-center pt-4">Latest Projects</h1>
@@ -228,7 +228,7 @@
           </li>
 
           <li class="py-9">
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Global</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>Global</a>
 
             <div class="absolute hidden top-24 left-0 w-full bg-black z-50">
                 <div class="grid grid-cols-4 px-24 py-9">
@@ -305,19 +305,19 @@
           </li>
 
           <li>
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>AX Blog</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>AX Blog</a>
           </li>
 
           <li>
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Ax design</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>Ax design</a>
           </li>
 
           <li>
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>who we are</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-white cursor-pointer" href='#'>who we are</a>
           </li>
           
           <li class="relative py-9">
-            <a id="hover-nav" class="py-9 relative px-4 uppercase text-lg text-yellow-500 cursor-pointer" href='#'>EN</a>
+            <a id="hover-nav" class="py-9 relative px-4 uppercase text-base text-yellow-500 cursor-pointer" href='#'>EN</a>
 
             <div id="category" class="absolute hidden top-24 w-32 left-0 w-full bg-black z-50">
               <div class="flex flex-col p-4">
@@ -328,10 +328,11 @@
           </li>
           
       </ul>
-      <p id="sideBarBtn" class="md:hidden block text-white">
+      <p id="sideBarBtn" class="xl:hidden block text-white">
         <i class="fas fa-bars text-xl"></i>
       </p>
       <div id="sideBar" style="backdrop-filter: blur(15px);"  class="overflow-auto w-full hidden h-screen fixed top-16 right-0 bg-black bg-opacity-90">
+
         <ul id="sideBarMenu" class="grid grid-cols-1">
           <li x-data="{buy:false}" @click="buy = true" class="py-4">
             <a  class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
@@ -420,14 +421,12 @@
 
             </div>
           </li>
-
           <li class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Rent</a>
           </li>
           <li class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Sell</a>
           </li>
-
           <li x-data="{off:false}" @click="off = true" class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>off-plan</a>
 
@@ -551,7 +550,6 @@
 
             </div>
           </li>
-
           <li x-data="{global:false}" @click="global = true" class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Global</a>
 
@@ -638,19 +636,15 @@
 
             </div>
           </li>
-
           <li class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>AX Blog</a>
           </li>
-
           <li class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Ax design</a>
           </li>
-
           <li class="py-4">
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>who we are</a>
           </li>
-
           <li x-data="{lang:false}" @click="lang = true" class="py-4">
             <a class="relative px-4 uppercase text-lg text-yellow-500 cursor-pointer" href='#'>EN</a>
 
@@ -670,14 +664,11 @@
               </div>
             </div>
           </li>
-          
-      </ul>
+        </ul>
+
       </div>
     </nav>
 
-    <div class="z-50">
-      <h1 class="text-white">hello</h1>
-    </div>
 
 
 
