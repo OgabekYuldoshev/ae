@@ -16,8 +16,10 @@
   </video>    
   <div class="relative w-full h-screen">
 
-    <nav style="backdrop-filter: blur(15px);" class="w-full bg-black bg-opacity-80 md:px-28 py-4 md:py-0 px-6 flex items-center fixed z-50 justify-between">
-      <img class="md:w-44 w-32" src="https://www.axcapital.ae/static/img/logo2-left.png">
+    <nav style="backdrop-filter: blur(15px);" class="w-full bg-black hover:bg-opacity-90 duration-300 bg-opacity-80 md:px-28 py-4 md:py-0 px-6 flex items-center fixed z-50 justify-between">
+      <a href="#">
+        <img class="md:w-44 w-32" src="https://www.axcapital.ae/static/img/logo2-left.png">
+      </a>
 
       <ul id="menu" class="md:flex items-center hidden">
           <li class="py-9">
@@ -326,15 +328,13 @@
           </li>
           
       </ul>
-      
       <p id="sideBarBtn" class="md:hidden block text-white">
         <i class="fas fa-bars text-xl"></i>
       </p>
-
       <div id="sideBar" style="backdrop-filter: blur(15px);"  class="overflow-auto w-full hidden h-screen fixed top-16 right-0 bg-black bg-opacity-90">
         <ul id="sideBarMenu" class="grid grid-cols-1">
-          <li x-data="{buy:false}" class="py-4">
-            <a @click="buy = true" class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
+          <li x-data="{buy:false}" @click="buy = true" class="py-4">
+            <a  class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Buy</a>
 
             <div
             x-show="buy"
@@ -428,8 +428,8 @@
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Sell</a>
           </li>
 
-          <li x-data="{off:false}" class="py-4">
-            <a @click="off = true" class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>off-plan</a>
+          <li x-data="{off:false}" @click="off = true" class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>off-plan</a>
 
             <div
             x-show="off"
@@ -552,8 +552,8 @@
             </div>
           </li>
 
-          <li x-data="{global:false}" class="py-4">
-            <a @click="global = true" class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Global</a>
+          <li x-data="{global:false}" @click="global = true" class="py-4">
+            <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>Global</a>
 
             <div
             x-show="global"
@@ -651,8 +651,8 @@
             <a class="relative px-4 uppercase text-xl text-white cursor-pointer" href='#'>who we are</a>
           </li>
 
-          <li x-data="{lang:false}" class="py-4">
-            <a @click="lang = true" class="relative px-4 uppercase text-lg text-yellow-500 cursor-pointer" href='#'>EN</a>
+          <li x-data="{lang:false}" @click="lang = true" class="py-4">
+            <a class="relative px-4 uppercase text-lg text-yellow-500 cursor-pointer" href='#'>EN</a>
 
             <div
             x-show="lang"
@@ -674,6 +674,13 @@
       </ul>
       </div>
     </nav>
+
+    <div class="z-50">
+      <h1 class="text-white">hello</h1>
+    </div>
+
+
+
 
     <div style="backdrop-filter: blur(15px);" class="absolute bottom-0 bg-black bg-opacity-80 w-full text-center py-6 text-white text-2xl left-0">
       <i id="arrow" class="fas fa-chevron-down"></i>
