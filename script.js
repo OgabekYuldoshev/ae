@@ -2,7 +2,7 @@
 function change(e, id){
    tabcontent = $('.content');
    for (i = 0; i < tabcontent.length; i++) {
-     tabcontent[i].className = "content flex hidden flex-wrap mt-5 px-5 justify-between py-14";
+     tabcontent[i].className = "content hidden md:grid-cols-3 grid-cols-1 gap-5 mt-5 px-5 justify-between py-10";
    }
  
    tablinks = document.getElementsByClassName("tablinks");
@@ -10,8 +10,8 @@ function change(e, id){
      tablinks[i].className = tablinks[i].className.replace("active", "");
    }
  
-   document.getElementById(id).className = "content flex block flex-wrap mt-5 px-5 justify-between py-14";
-   e.currentTarget.className = "active tablinks mx-5 px-4 py-2 relative cursor-pointer duration-300 hover:text-yellow-500 text-xl";
+   document.getElementById(id).className = "content grid md:grid-cols-3 grid-cols-1 gap-5 mt-5 px-5 justify-between py-10";
+   e.currentTarget.className = "active tablinks mx-2 md:mx-5 px-4 py-2 relative cursor-pointer duration-300 hover:text-yellow-500 select-none text-base md:text-xl";
 } 
 
 
